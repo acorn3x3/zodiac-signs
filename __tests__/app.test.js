@@ -20,7 +20,7 @@ describe('zodiac routes', () => {
     };
     expect(res.body).toEqual(aquarius);
   });
-  it('/horoscopes/:message should return horoscope', async () => {
+  it('/horoscopes/:sign should return horoscope', async () => {
     const res = await request(app).get('/horoscopes/aquarius');
     const aquarius = {
       id: '1',
