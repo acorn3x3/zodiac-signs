@@ -8,5 +8,5 @@ app.listen(PORT, () => {
 });
 
 process.on('exit', () => {
-  console.info('👋  Goodbye!');
+  console.info('👋  Laterz!');
 });
