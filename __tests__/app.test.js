@@ -21,11 +21,13 @@ describe('zodiac routes', () => {
     expect(res.body).toEqual(aquarius);
   });
   it('/horoscopes/:message should return horoscope detail', async () => {
+    const res = await request(app).get('horoscopes/1');
     const aquarius = {
       id: '1',
       name: 'aquarius',
       sign: 'aquarius',
       message: `Maybe its all the Nickelodeon you've been watching but just because you haven't peed in 3 days doesnt make you a water bender`,
     };
+    expect(res.body).toEqual(aquarius);
   });
 });
